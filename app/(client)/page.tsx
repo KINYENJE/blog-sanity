@@ -11,6 +11,11 @@ async function getPosts() {
     title,
     slug,
     publishedAt,
+    _id,
+    excerpt,
+    tags[]-> {
+      _id, name, slug
+    }, 
   }
   `;
 

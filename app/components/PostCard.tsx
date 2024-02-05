@@ -22,6 +22,19 @@ const PostCard = ({post}: PostCardProps) => {
         <p className={`${dateFont.className} my-2 text-purple-800`}>{new Date(post?.publishedAt).toDateString()}</p>
         <p className='dark:text-gray-400 mb-4 line-clamp-2'>{post?.excerpt}</p>
       </Link>
+
+      {/** TAGS */}
+
+      <div>
+        {post?.tags?.length > 0 && post?.tags.map((tag) => {
+          return (
+            <Link href={`/tags/${tag?.slug?.current}`} key={tag?._id}>
+              <span className='mr-2 p-1 rounded-sm text-sm lowercase dark:bg-gray-950 border dark:border-gray-900'>#{tag?.name}</span>
+            </Link>
+          )
+        })}
+      </div>
+
     </div>
 
   )
