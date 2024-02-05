@@ -25,6 +25,8 @@ async function getPosts() {
 }
 
 
+export const revalidate = 60;  // for caching purposes
+
 
 
 export default async function Home() {
