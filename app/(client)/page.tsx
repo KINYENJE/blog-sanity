@@ -31,7 +31,7 @@ export const revalidate = 60;  // for caching purposes
 
 export default async function Home() {
   const posts: Post[] = await getPosts()
-  console.log(posts, 'posts')
+  // console.log(posts, 'posts')
 
 
   return (
