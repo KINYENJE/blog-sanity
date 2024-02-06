@@ -17,7 +17,7 @@ interface Params {
   }
 
 }
-export const fetchPost = async (slug:string) => {
+const fetchPost = async (slug:string) => {
   const query = `*[_type == 'post' && slug.current == "${slug}"] {
     title,
     excerpt,
