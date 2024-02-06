@@ -12,4 +12,5 @@ export interface Tag {
   name: string;
   _id: string;
   slug: {current: string};
+  postCounter?: number;
 }

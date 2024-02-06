@@ -36,7 +36,7 @@ export default async function Home() {
 
   return (
    <div>
-    <Heading title="KINYENJE BLOG" />
+    <Heading title="Latest Tweets!" tags />
     {posts?.length > 0 && posts.map((post: Post) => {
       return (
         <PostCard post={post} key={post._id} />
