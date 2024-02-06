@@ -1,4 +1,4 @@
-import SanityNavbar from "@/app/components/sanityNavbar"
+import SanityNavbar from "@/app/components/SanityNavbar"
 import { Provider } from "@/app/utils/Provider"
 import './globals.css'
 
